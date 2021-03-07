@@ -10,13 +10,13 @@ function Character(props) {
     const [button, setButton] = React.useState("");
 
     return (
-        <div className={Character} style={{backgroundColor: color, minHeight: "100px", maxWidth:"200px"}}
+        <div className={"Character"} style={{backgroundColor: color, minHeight: "100px", maxWidth:"200px"}}
         onClick={()=>setButton(true)}>
             <h1>Name: {name}</h1>
             <h2>Superpower: {power}</h2>
-            <h2>Age: {props.age > 50 ? "I am too old" : props.age}</h2>
+            <h2>Age: {age > 50 ? "I am too old" : props.age}</h2>
             <h2>Special Moves: {moves}</h2>
-            {button===true?<h3>My power is: {power}</h3>: <h3></h3>}
+            {button===true?<h3>My power is: {power}</h3>: <h3> </h3>}
 
         </div>
 
